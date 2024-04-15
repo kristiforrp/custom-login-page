@@ -1,0 +1,50 @@
+/* Customize the main button in the form */
+#loginform .submit input,
+#registerform .submit input,
+#lostpasswordform .submit input {
+	font-size: 14px;
+	width: 100%;
+	margin-top: 16px;
+	height: 40px;
+	-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+/* Adding border on focused input fields */
+#loginform input:focus,
+#registerform input:focus,
+#lostpasswordform input:focus {
+	border: 1px solid #0a845e;
+}
+
+
+
+/* --- TABLET BREAKPOINT --- */
+@media only screen and (max-width: 768px) {
+  
+	/* Remove form background */
+	.login .ml-extra-div {
+		display: none;
+	}
+	
+	/* Change the form container width */
+	.ml-form-container {
+		min-width: 100%;
+	}
+	
+}
+
+
+
+/* --- MOBILE BREAKPOINT --- */
+@media only screen and (max-width: 600px) {
+	
+	/* Add padding to the form container */
+	#login {
+		padding: 24px !important;
+	}
+	
+}
